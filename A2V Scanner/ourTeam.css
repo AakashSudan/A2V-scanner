@@ -1,0 +1,19 @@
+.Team {
+    /* position: relative; */
+    display: inline-block;
+    align-items: center;
+    /* margin-left: 200px; */
+}
+
+.remote {
+    margin-top: 5px;
+}
+
+.ourTeam {
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* display: flex; */
+    margin-left: 160px;
+    font-size: 60px;
+}
