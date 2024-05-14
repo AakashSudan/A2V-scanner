@@ -1,3 +1,14 @@
+<?php
+session_start();
+// if(isset($_SESSION['loggedin'])|| $_SESSION['loggedin']!=true){
+//   header("location: Login.php");
+//   exit;
+// }
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +18,7 @@
   <meta name="keywords" content=" Intro section with dropdown navigation,Frontend Mentor ">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>A2V Scanner</title>
+  <title>A2V Scanner - <?php $_SESSION['Username']?></title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -30,7 +41,7 @@
               <a href="/">Automated Discovery</a></li>
                 <li>
                   <!-- <img src="./images/icon-calendar.svg" alt="" aria-hidden="true" width="15" height="15" />  -->
-                  <a href="/">Vunnerability Detection</a></li>
+                  <a href="scanner.php">Vunnerability Detection</a></li>
             <li>
               <!-- <img src="./images/icon-reminders.svg" alt="" aria-hidden="true" width="15" height="15" />  -->
               <a href="/">Risc Assessment</a></li>
@@ -45,7 +56,7 @@
           </button>
           <ul class="hidden-company">
             <li><a href="/">History</a></li>
-            <li><a href="ourTeam.html">Our Team</a></li>
+            <li><a href="ourTeam.php">Our Team</a></li>
             <li><a href="/">Blog</a></li>
           </ul>
         </li>
@@ -53,7 +64,10 @@
         <li><a href="/">About</a></li>
       </ul>
       <ul class="nav-buttons nav-menu">
-        <li><a href="SignIn-SignUp-Form-main\index.html"><button>Login</button></a></li>
+
+      WELCOME TO OUR WEBSITE
+        <li><a href="Login.php"><button>LOGOUT</button></a></li>
+
         <!-- <li><button>Register</button></li> -->
       </ul>
     </nav>

@@ -39,7 +39,7 @@
             </li>
             <li>
               <!-- <img src="./images/icon-calendar.svg" alt="" aria-hidden="true" width="15" height="15" />  -->
-              <a href="/">Vunnerability Detection</a>
+              <a href="scanner.html">Vunnerability Detection</a>
             </li>
             <li>
               <!-- <img src="./images/icon-reminders.svg" alt="" aria-hidden="true" width="15" height="15" />  -->
@@ -65,7 +65,7 @@
         <li><a href="/">About</a></li>
       </ul>
       <ul class="nav-buttons nav-menu">
-        <li><a href="SignIn-SignUp-Form-main\index.html"><button>Login</button></a></li>
+        <li><a href="Login.php"><button>LOGOUT</button></a></li>
         <!-- <li><button>Register</button></li> -->
       </ul>
     </nav>
@@ -74,54 +74,13 @@
     <img class="hero" src="./images/image-hero-mobile.png" alt="Man with laptop" />
     <section class="remote">
       <section class="remote-information">
-        <h1 class="ourTeam">OUR TEAM</h1>
-
-        <div class="Team">
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./images/aakash sudan.jpeg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">AAKASH SUDAN</h3>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
+        <div class="scan">
+            <div class="input-group input-group-lg">
+                <!-- <span class="input-group-text" id="inputGroup-sizing-lg">Large</span> -->
+                <input type="text" class="scanInput form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
             </div>
-          </div>
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./images/Vanshak chhabra.jpeg" class="img-fluid rounded-start" alt="Vanshak Chhabra">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">VANSHAK CHHABRA</h3>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./images/Amandeep Singh.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">AMANDEEP SINGH</h3>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-            </div>
-          </div>
+            <button type="button" class="btn mt-3 btn-primary btn-sm">Sql Injection</button>
+            <button type="button" class="btn mt-3 btn-primary btn-sm">Scan Now</button>
         </div>
 
       </section>
