@@ -15,7 +15,7 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="\A2V Scanner\SignUp.php" method="post"  class="sign-in-form">
+          <form action="\A2V\SignUp.php" method="post"  class="sign-in-form">
             <h2 class="title">Sign Up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -58,7 +58,7 @@
             <div class="content">
                 <h3>New here?</h3>
                 <p>Already have an Account</p>
-                <a href="http://localhost/A2V%20Scanner/Login.php"><button class="btn transparent" id="sign-up-btn">Sign in</button></a>
+                <a href="http://localhost/A2V/Login.php"><button class="btn transparent" id="sign-up-btn">Sign in</button></a>
             </div>
             <img src="./img/log.svg" class="image" alt="">
         </div>
@@ -76,8 +76,8 @@
 
     <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "admin";
+$password = "123456";
 $database = "users";
 
 $conn = mysqli_connect($servername, $username, $password, $database);

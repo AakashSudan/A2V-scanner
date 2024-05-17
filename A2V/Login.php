@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "admin";
+$password = "123456";
 $database = "users";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
@@ -63,7 +63,7 @@ else{
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="\A2V Scanner\Login.php" method="post" class="sign-in-form">
+          <form action="\A2V\Login.php" method="post" class="sign-in-form">
             <h2 class="title">Sign In</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -99,7 +99,7 @@ else{
             <div class="content">
                 <h3>New here?</h3>
                 <p>Create your Account.</p>
-                <a href="http://localhost/A2V%20Scanner/SignUp.php"><button class="btn transparent" id="sign-up-btn">Sign Up</button></a>
+                <a href="http://localhost/A2V/SignUp.php"><button class="btn transparent" id="sign-up-btn">Sign Up</button></a>
             </div>
             <img src="./img/log.svg" class="image" alt="">
         </div>
