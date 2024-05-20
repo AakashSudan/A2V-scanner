@@ -20,6 +20,7 @@ session_start();
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>A2V Scanner - <?php $_SESSION['Username']?></title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -79,7 +80,11 @@ session_start();
         <h2>Secure Your Website</h2>
         <p>Through the scanner’s eye, no bug can hide,
           A silent guardian, in bytes we confide.</p>
-        <a href="/">Learn more</a>
+          <form action="scanner.html" method="get">
+            <!-- <button class="btn" type="submit">Go to HTML Page</button> -->
+            <button type="submit" class="submit ">Start Scanning</button>
+          </form>
+        <!-- <a href="">Scan Your Website</a> -->
       </section>
       <!-- <section class="partners">
         <img src="./images/client-databiz.svg" alt="Databiz logo">

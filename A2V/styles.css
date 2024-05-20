@@ -19,21 +19,27 @@
     margin: 0;
     padding: 0;
 }
+
 html,
 body {
     height: 100%;
 }
+
 body {
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
     overflow-y: scroll;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: var(--epilogue-font);
     background-color: var(--almost-white);
 }
+
 body::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
+    display: none;
+    /* for Chrome, Safari, and Opera */
 }
 
 img,
@@ -44,6 +50,7 @@ svg {
     display: block;
     max-width: 100%;
 }
+
 img {
     display: block;
 }
@@ -55,12 +62,14 @@ li {
     margin: 0;
     list-style: none;
 }
+
 input,
 button,
 textarea,
 select {
     font: inherit;
 }
+
 p,
 h1,
 h2,
@@ -86,6 +95,7 @@ header {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 nav {
     display: none;
 }
@@ -102,6 +112,7 @@ header.active nav {
     top: 0;
     gap: 2rem;
 }
+
 header.active::before {
     content: "";
     display: inline-block;
@@ -113,6 +124,7 @@ header.active::before {
     top: 0;
     left: 0;
 }
+
 header.active .nav-menu {
     position: static;
     display: flex;
@@ -121,10 +133,12 @@ header.active .nav-menu {
     align-items: left;
     margin-top: 3rem;
 }
+
 header.active .nav-buttons {
     width: max-content;
     margin: 0 auto;
 }
+
 header.active .nav-buttons li:last-child button {
     padding: 0.5rem 3rem;
 }
@@ -144,12 +158,14 @@ nav ul button {
     background-color: transparent;
     border: none;
 }
+
 .hamburger {
     cursor: pointer;
     z-index: 99;
     position: fixed;
     margin-left: 85%;
 }
+
 header.active .hamburger {
     content: url("./images/icon-close-menu.svg");
 }
@@ -165,10 +181,12 @@ header.active .hamburger {
 .hidden-company {
     display: none;
 }
+
 .features-btn,
 .company-btn {
     position: relative;
 }
+
 .hidden-features.active,
 .hidden-company.active {
     display: flex;
@@ -190,28 +208,34 @@ h1 img {
     width: 6rem;
     margin-top: -15px;
 }
+
 main,
 .remote,
 .remote-information {
     display: flex;
     flex-direction: column;
 }
+
 .remote {
     gap: 6.6rem;
 }
+
 .remote-information {
     text-align: center;
     align-items: center;
     padding: 1rem;
     gap: 3.1rem;
 }
+
 main {
     gap: 8.8rem;
 }
+
 h2 {
     font-size: 4.5rem;
     line-height: 5rem;
 }
+
 .remote-information p {
     color: var(--medium-gray);
     font-size: 1.1rem;
@@ -240,11 +264,13 @@ h2 {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .partners img {
     max-width: 80px;
     height: 100%;
     object-fit: contain;
 }
+
 .nav-buttons {
     gap: 1.2rem;
     align-items: center;
@@ -273,6 +299,7 @@ h2 {
 }
 
 @media (hover: hover) {
+
     nav ul a:hover,
     nav ul button:hover,
     .remote-information a:hover,
@@ -280,10 +307,12 @@ h2 {
         color: var(--almost-black);
         transition: var(--transition);
     }
+
     .nav-buttons li:last-child button {
         border-color: var(--almost-black);
         transition: var(--transition);
     }
+
     .remote-information a:hover {
         background-color: transparent;
         border: 1px solid var(--medium-gray);
@@ -299,9 +328,11 @@ h2 {
         max-height: 41.5rem;
         max-width: 30rem;
     }
+
     .remote {
         grid-row: 1;
     }
+
     main {
         gap: 8.8rem;
         display: grid;
@@ -311,9 +342,11 @@ h2 {
         max-width: 1000px;
         justify-content: center;
     }
+
     header {
         gap: 3.8rem;
     }
+
     nav {
         display: flex;
         flex-direction: row;
@@ -321,10 +354,12 @@ h2 {
         justify-content: space-between;
         width: 100%;
     }
+
     nav ul {
         display: flex;
         flex-direction: row;
     }
+
     .remote {
         margin-top: 6.5rem;
         margin-left: 2.3rem;
@@ -344,9 +379,11 @@ h2 {
     .hamburger {
         display: none;
     }
+
     .partners {
         justify-content: space-between;
     }
+
     .partners img {
         max-width: 100px;
     }
@@ -356,4 +393,63 @@ h2 {
     h2 {
         font-size: 3rem;
     }
+}
+
+.submit {
+    background-color: rgb(40, 120, 212);
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.submit:hover {
+    border: 2px solid rgb(40, 120, 212);
+    color: rgb(40, 120, 212);
+    background-color: white;
+}
+
+.input {
+    height: 50px;
+    width: 300px;
+    border: 2px solid black;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    text-align: center;
+}
+
+input[type="text"]::placeholder {
+    text-align: center;
+    /* Optional: You can also style the placeholder text (e.g., color, font-size) */
+    color: gray;
+    opacity: 1;
+    /* Ensure the color applies consistently across browsers */
+}
+
+.submit1 {
+    background-color: rgb(40, 120, 212);
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.submit1:hover {
+    border: 2px solid rgb(40, 120, 212);
+    color: rgb(40, 120, 212);
+    background-color: white;
+}
+
+.text {
+
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
