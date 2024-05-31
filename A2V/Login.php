@@ -15,7 +15,7 @@ $login=false;
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $Username = $_POST['Username'];
     $password = $_POST['password'];
-    // echo "Your Email is $email and password is $password";
+    
 }
 
 
@@ -27,9 +27,6 @@ $num = mysqli_num_rows($result);
 // echo "$num";
 if ($num == 1){
     $login == true;
-    // session_start();
-    // $_SESSION['loggedin'] = true;
-    // $_SESSION['Username'] = $username;
     header("location: index.php");
 }
 else{

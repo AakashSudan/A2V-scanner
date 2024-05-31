@@ -27,7 +27,7 @@ class Crawler:
         return self.links
 
     def setoptions(self, depth=1):
-        """Define how far user wants to crawl"""
+        
 
         options = Options()
         options.scope.max_depth = depth

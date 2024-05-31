@@ -14,8 +14,8 @@ session_start();
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content=" Intro section with dropdown navigation - Frontend Mentor">
-  <meta name="keywords" content=" Intro section with dropdown navigation,Frontend Mentor ">
+  <meta name="description" content=" Intro section with dropdown navigation">
+  <meta name="keywords" content=" Intro section with dropdown navigation ">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>A2V Scanner - <?php $_SESSION['Username']?></title>
